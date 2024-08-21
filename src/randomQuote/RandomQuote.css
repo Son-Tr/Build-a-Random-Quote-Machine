@@ -1,0 +1,24 @@
+
+.box{
+    display: grid;
+    place-items: center; /* Căn giữa theo cả chiều ngang và chiều dọc */
+    height: 100vh; /* Chiều cao toàn bộ màn hình */
+    margin: 0;
+}
+#quote-box{
+    border-radius: 3px;
+    width: 450px;
+    padding: 40px 50px;
+    background-color: #fff;
+}
+
+#text{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.75em;
+    width: 450px;
+}
+
+#tweet-quote{
+    margin-right: 25px;
+}
