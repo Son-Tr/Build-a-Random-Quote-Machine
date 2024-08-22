@@ -1,24 +1,80 @@
-
-.box{
+.box {
     display: grid;
-    place-items: center; /* Căn giữa theo cả chiều ngang và chiều dọc */
-    height: 100vh; /* Chiều cao toàn bộ màn hình */
+    place-items: center;
+    align-content: center;
+    height: 100vh;
     margin: 0;
+    background-color: rgb(22, 160, 133);
+    color: rgb(22, 160, 133);
+    font-family: "Merriweather", serif;
 }
-#quote-box{
-    border-radius: 3px;
+
+h1 {
+    color: white
+}
+
+#quote-box {
+    border-radius: 10px;
     width: 450px;
     padding: 40px 50px;
     background-color: #fff;
 }
 
-#text{
+.quote-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.quote-text span {
+    font-size: 2.5em;
+    line-height: 2em;
+   
+}
+
+#text {
     text-align: center;
     font-weight: 500;
     font-size: 1.75em;
-    width: 450px;
+}
+
+#author {
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+#tweet-quote {
+    margin-right: 25px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1em;
 }
 
 #tweet-quote{
-    margin-right: 25px;
+    color: rgb(22, 160, 133);
+    font-size: 1.5rem;
 }
+
+#new-quote{
+    background-color: rgb(22, 160, 133);
+    padding: 8px 18px 6px 18px;
+    outline: none;
+    color: white;
+    border: 1px solid rgb(22, 160, 133);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all linear 0.3s ;
+}
+
+#new-quote:hover {
+    opacity: 0.8;
+}
+
+

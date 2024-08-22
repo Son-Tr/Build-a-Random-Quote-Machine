@@ -47,11 +47,13 @@ export default class RandomQuote extends Component {
         console.log(this.state.content)
         return (
             <div className='box'>
+                <h1>Random Quote</h1>
                 <div id='quote-box'>
                     <div className="quote-text">
+                       <span> <i className="fa-solid fa-quote-left" /></span>
                         <p id="text">{this.state.content}</p>
                     </div>
-                    <div id="author">{this.state.author}</div>
+                    <div id="author">- {this.state.author}</div>
                     <div className="buttons">
                         <a id="tweet-quote" href={this.getContentToPost()} target='_blank'>
                             <i className="fa-brands fa-x-twitter" />
