@@ -61,6 +61,7 @@ export default class RandomQuote extends Component {
                         <button id="new-quote" onClick={this.handleChangeQuote}>New Quote</button>
                     </div>
                 </div>
+                <p className='footer'>by <a href="https://github.com/Son-Tr" target='_blank'>Son-Tr</a></p>
             </div>
         )
     }

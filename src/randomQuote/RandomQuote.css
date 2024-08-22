@@ -77,4 +77,14 @@ h1 {
     opacity: 0.8;
 }
 
+.footer{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
 
