@@ -71,6 +71,7 @@ h1 {
     cursor: pointer;
     border-radius: 8px;
     transition: all linear 0.3s ;
+   
 }
 
 #new-quote:hover {
