@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './RandomQuote.css';
+import axios from 'axios';
 
 
 export default class RandomQuote extends Component {
@@ -12,19 +13,26 @@ export default class RandomQuote extends Component {
     }
 
     /* ----------------------------------- fetch Data function ---------------------------------- */
-    fetchData = async () => {
-        try {
-            const response = await fetch('https://api.quotable.io/quotes/random');
-            const [data] = await response.json();
-            console.log(data.content)
-            this.setState({
-                content: data.content,
-                author: data.author,
+    fetchData = () => {
+
+        const API_URL = 'https://api.breakingbadquotes.xyz/v1/quotes';
+        axios.get(`${API_URL}`)
+            .then((res) => {
+
+                const [data] = res.data;
+              //  console.log(data);
+                this.setState({
+                    content: data.quote,
+                    author: data.author
+                })
             })
-        } catch (error) {
-            console.log(error)
-        }
+            .catch((err) => {
+                console.log(err);
+            });
+
     }
+
+
     /* ----------------------------------- Get API data on start.---------------------------------- */
     componentDidMount() {
         this.fetchData()
@@ -50,7 +58,7 @@ export default class RandomQuote extends Component {
                 <h1>Random Quote</h1>
                 <div id='quote-box'>
                     <div className="quote-text">
-                       <span> <i className="fa-solid fa-quote-left" /></span>
+                        <span> <i className="fa-solid fa-quote-left" /></span>
                         <p id="text">{this.state.content}</p>
                     </div>
                     <div id="author">- {this.state.author}</div>
