@@ -3,9 +3,9 @@ import RandomQuote from './randomQuote/RandomQuote';
 
 function App() {
   return (
-    <div >
+    < >
       <RandomQuote/>
-    </div>
+    </>
   );
 }
 

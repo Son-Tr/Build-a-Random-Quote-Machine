@@ -95,4 +95,36 @@ h1 {
     color:#FF3C38;
 }
 
+/* ------------------------------- responsive ------------------------------- */
+@media screen and (max-width: 614px) {
+    
+    #quote-box{
+        width: 340px;
+    }
+}
+@media screen and (max-width: 480px) {
+   
+    #quote-box{
+        width: 300px;
+        padding: 20px 30px;
+    }
+    .quote-text span {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    #text {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #quote-box{
+        width: 240px;
+
+    }
+   
+}
 
