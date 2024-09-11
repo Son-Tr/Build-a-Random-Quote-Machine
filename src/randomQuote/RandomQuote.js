@@ -18,7 +18,6 @@ export default class RandomQuote extends Component {
         const API_URL = 'https://api.breakingbadquotes.xyz/v1/quotes';
         axios.get(`${API_URL}`)
             .then((res) => {
-
                 const [data] = res.data;
               //  console.log(data);
                 this.setState({
@@ -52,7 +51,7 @@ export default class RandomQuote extends Component {
 
 
     render() {
-        console.log(this.state.content)
+        // console.log(this.state.content)
         return (
             <div className='box'>
                 <h1>Random Quote</h1>
@@ -63,13 +62,13 @@ export default class RandomQuote extends Component {
                     </div>
                     <div id="author">- {this.state.author}</div>
                     <div className="buttons">
-                        <a id="tweet-quote" href={this.getContentToPost()} target='_blank'>
+                        <a id="tweet-quote" href={this.getContentToPost()} target='_blank'  rel="noreferrer" >
                             <i className="fa-brands fa-x-twitter" />
                         </a>
                         <button id="new-quote" onClick={this.handleChangeQuote}>New Quote</button>
                     </div>
                 </div>
-                <p className='footer'>by <a href="https://github.com/Son-Tr" target='_blank'>Son-Tr</a></p>
+                <p className='footer'>by <a href="https://github.com/Son-Tr" target='_blank'  rel="noreferrer" >Son-Tr</a></p>
             </div>
         )
     }
