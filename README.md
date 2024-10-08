@@ -15,3 +15,7 @@ Random Quote Project helped me practice to work with **API**, and similar to **R
 
 ## Live Demo
 You can view the live demo of the project here: [https://random-quote-machine-project-son-tr.vercel.app/]
+
+## Acknowledgments
+- Thanks to **FreeCodeCamp** for providing an excellent learning environment.
+
